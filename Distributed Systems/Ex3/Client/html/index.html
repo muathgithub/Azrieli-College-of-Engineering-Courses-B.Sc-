@@ -1,0 +1,91 @@
+<head>
+
+  <title>Best2Watch</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/error_message_style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../js/index.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header_flex">
+
+      <h1>Best2Watch</h1>
+
+    </div>
+
+
+  </header>
+
+
+  <main>
+    <div class="Upper_controls_flex">
+      <div class="Sort_controls_flex">
+        <div class="Selects_sort_flex">
+
+
+
+          <label class="Sort_label">Sort by: </label>
+          <select class="Sort_by">
+            <option value="Date">Release Date</option>
+            <option value="Name">Name</option>
+            <option value="Rating">Rating</option>
+          </select>
+        </div>
+        <div class="Selects_sort_flex">
+          <label class="Sort_label">Sort order: </label>
+          <select class="Sort_order">
+            <option value="Descending">Descending</option>
+            <option value="Ascending">Ascending</option>
+
+          </select>
+
+        </div>
+      </div>
+      <div class="Upper_add_button_flex">
+        <input class="Buttons_style Other_button Add_media_button" type="button" value="+ Add Media">
+        <input class="Buttons_style Other_button Add_actor_button" type="button" value="+ Add Actor">
+      </div>
+
+
+
+    </div>
+
+
+    </div>
+    <div class="All_Media_flex">
+
+    </div>
+    <div class="Lower_add_button_flex">
+      <input class="Buttons_style Other_button Add_media_button" type="button" value="+ Add Media">
+      <input class="Buttons_style Other_button Add_actor_button" type="button" value="+ Add Actor">
+    </div>
+
+    <div class="Alert_full_cover">
+
+      <div class="Alert_message_container center">
+        <span class="Alert_message_span">Are you sure you want to delete this actor?</span>
+        <div class="Alert_message_buttons_container">
+          <input type="button" class="Alert_message_button Alert_message_yes" value="Yes" />
+          <input type="button" class="Alert_message_button Alert_message_no" value="No" />
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="error_full_cover">
+
+    <div class="error_message_container center">
+      <span class="error_message_span"></span>
+      <input type="button" class="error_message_button" value="Close" />
+    </div>
+
+  </div>
+</body>

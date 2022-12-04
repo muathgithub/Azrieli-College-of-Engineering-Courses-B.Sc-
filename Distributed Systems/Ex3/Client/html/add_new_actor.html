@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Add New Actor</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/error_message_style.css" />
+    <link rel="stylesheet" href="../css/add_new_actor.css" />
+    <!-- load bootstrap via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="../js/add_new_actor.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Add New Actor</h1>
+
+        <form id="Actors_form" name="Actors_form" method="POST">
+
+            <label class="" for="actors_names_options">Add Existing Actor</label>
+            <div class="form-group">
+                <select id="actors_names_options" class="form-control">
+
+                </select>
+            </div>
+
+            <div id="isManuallyDetailsFill-group" class="form-group">
+                <label for="isManuallyDetailsFill">Manually Details Fill</label>
+                <input type="checkbox" class="form-check-input" name="isManuallyDetailsFill" id="isManuallyDetailsFill"
+                    placeholder="true/false">
+                <!-- errors will go here -->
+            </div>
+
+            <div class="actorManuallyInfo">
+                <div id="name_group" class="form-group">
+                    <label for="name">Actors</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Type actor name here"
+                        required>
+                </div>
+                <div id="picture-group" class="form-group">
+                    <label for="picture">Actor picture URL</label>
+                    <input type="url" class="form-control" name="picture" id="picture"
+                        placeholder="Type actor picture url here" required>
+                </div>
+                <div id="site_group" class="form-group">
+
+                    <label for="site">Actor site URL</label>
+                    <input type="url" class="form-control" name="site" id="site" placeholder="Type site url here"
+                        required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+
+    <div class="error_full_cover">
+
+        <div class="error_message_container center">
+            <span class="error_message_span"></span>
+            <input type="button" class="error_message_button" value="Close" />
+        </div>
+
+    </div>
+</body>
+
+</html>

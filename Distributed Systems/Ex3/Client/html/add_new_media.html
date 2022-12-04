@@ -1,0 +1,108 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Add New Media</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/error_message_style.css" />
+    <!-- load bootstrap via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script> <!-- load jquery via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="../js/add_new_media.js">
+    </script> <!-- load our javascript file -->
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <h1>Add New Media</h1>
+
+        <!-- OUR FORM -->
+        <form id="Media_form" name="Media_form" method="POST">
+            <!-- NAME -->
+            <div id="name-group" class="form-group">
+                <label for="name">Media Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Type media name here"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- ID -->
+            <div id="id-group" class="form-group">
+                <label for="id">Media ID</label>
+                <input type="text" class="form-control" name="id_field" id="id_field" placeholder="Type media ID here"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+
+            <div id="date-group" class="form-group">
+                <label for="date">Release Date</label>
+                <input type="date" class="form-control" name="date" id="date"
+                    required>
+                <!-- errors will go here -->
+            </div>
+
+            <div id="director-group" class="form-group">
+                <label for="director">Director Name</label>
+                <input type="text" class="form-control" name="director" id="director"
+                    placeholder="Type director name here" required>
+                <!-- errors will go here -->
+            </div>
+
+            <div id="rating-group" class="form-group">
+                <label for="rating">Rating</label>
+                <input type="number" max='5' min='1' class="form-control" name="rating" id="rating"
+                    placeholder="Type rating between 1 to 5" required>
+                <!-- errors will go here -->
+            </div>
+
+            <div id="picture-group" class="form-group">
+                <label for="picture">Picture URL</label>
+                <input type="url" class="form-control" name="picture" id="picture"
+                    placeholder="Type media pciture url here" required>
+                <!-- errors will go here -->
+            </div>
+
+
+
+            <div id="isSeries-group" class="form-group">
+                <label for="isSeries">Is Series? </label>
+                <input type="checkbox" class="form-check-input" name="isSeries" id="isSeries" placeholder="true/false">
+                <!-- errors will go here -->
+            </div>
+        <div class="Series_info" >
+            <div id="Season-series-group"  class="form-group">
+                <label for="Season"  >Season: </label>
+                <input type="number" min='1' value = '1' class="form-control" name="season" id="season" placeholder="Type season" required>
+                <!-- errors will go here -->
+            </div>
+            <div class="Episode-group">
+            <div id="episode-series-group" class="form-group">
+                <label for="episode">Season 1 episode num: </label>
+                <input type="number" min='1' value = 1 class="form-control" name="episode_0" id="episode_0" placeholder="Type episode"
+                    required>
+                <!-- errors will go here -->
+            </div>
+        </div>
+        </div>
+
+            <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+        </form>
+
+    </div>
+
+    <div class="error_full_cover">
+
+        <div class="error_message_container center">
+            <span class="error_message_span"></span>
+            <input type="button" class="error_message_button" value="Close" />
+        </div>
+
+    </div>
+</body>
+
+</html>
